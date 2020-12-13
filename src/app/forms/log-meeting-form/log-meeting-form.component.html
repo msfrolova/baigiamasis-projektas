@@ -1,0 +1,26 @@
+<h1>Log a meeting</h1>
+<div class="container">
+  <form (ngSubmit)="onSubmit()" [formGroup]="form" autocomplete="off">
+    <div *ngFor="let question of questions">
+      <app-forms-question
+        [question]="question"
+        [form]="form"
+      ></app-forms-question>
+    </div>
+
+    <div>
+      <button
+        mat-raised-button
+        color="primary"
+        type="submit"
+        [disabled]="!form.valid"
+      >
+        Save
+      </button>
+    </div>
+  </form>
+
+  <div *ngIf="payLoad">
+    <strong>Saved the following values</strong><br />{{ payLoad }}
+  </div>
+</div>

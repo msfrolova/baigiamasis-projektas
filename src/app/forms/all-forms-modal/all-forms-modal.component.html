@@ -1,0 +1,19 @@
+<mat-form-field class="modal">
+  <mat-dialog-content>
+    <mat-label><strong>Select form</strong></mat-label>
+    <div>
+      <p class="message">Make sure client has required authority level</p>
+    </div>
+    <mat-select>
+      <mat-option
+        *ngFor="let form of selectedForms"
+        [value]="selectedForms"
+        [mat-dialog-close]="form.key"
+        >{{ form.title }}</mat-option
+      >
+    </mat-select>
+  </mat-dialog-content>
+</mat-form-field>
+<mat-dialog-actions align="end">
+  <button mat-raised-button color="basic" mat-dialog-close>Cancel</button>
+</mat-dialog-actions>

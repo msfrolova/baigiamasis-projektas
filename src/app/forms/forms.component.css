@@ -1,0 +1,29 @@
+.form-card {
+  width: 600px;
+  height: auto;
+  background-color: #e0e0e0;
+}
+
+.first-card {
+  width: 600px;
+  height: 400px;
+  background-color: #e0e0e0;
+}
+
+.second-card {
+  width: 600px;
+  height: 400px;
+  background-color: #bdbdbd;
+}
+
+.third-card {
+  width: 600px;
+  height: 400px;
+  background-color: #757575;
+}
+
+.title-tem > ::ng-deep .mat-figure {
+  margin-top: 10px;
+  align-items: flex-start;
+  justify-content: center;
+}

@@ -1,0 +1,49 @@
+<div [formGroup]="form" ngDefaultControl>
+  <label [attr.for]="question.key" class="question_label">{{
+    question.label
+  }}</label>
+
+  <div [ngSwitch]="question.controlType">
+    <app-question-textbox
+      ngDefaultControl
+      *ngSwitchCase="'textField'"
+      [formControlName]="question.key"
+      [id]="question.key"
+      [question]="question"
+    ></app-question-textbox>
+
+    <app-question-radio
+      ngDefaultControl
+      *ngSwitchCase="'radio'"
+      [formControlName]="question.key"
+      [id]="question.key"
+      [question]="question"
+    >
+    </app-question-radio>
+
+    <app-question-date-picker
+      ngDefaultControl
+      *ngSwitchCase="'datepicker'"
+      [formControlName]="question.key"
+      [id]="question.key"
+      [question]="question"
+    >
+    </app-question-date-picker>
+    
+    <app-question-select-one
+      ngDefaultControl
+      *ngSwitchCase="'selectOne'"
+      [formControlName]="question.key"
+      [id]="question.key"
+      [question]="question"
+    >
+    </app-question-select-one>
+  </div>
+
+  <div
+    class="errorMessage"
+    *ngIf="form.controls[question.key].dirty && !isValid"
+  >
+    <small>{{ question.label }} is required</small>
+  </div>
+</div>

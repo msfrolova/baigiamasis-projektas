@@ -1,0 +1,123 @@
+{
+    "forms":[
+       {
+          "key": "1",
+          "title":"Log a meeting",
+          "sections":[
+             {
+                "title":"Client infomration",
+                "questions":[
+                   {
+                      "value":"",
+                      "key":"name",
+                      "label":"Full name",
+                      "required":true,
+                      "order":1,
+                      "controlType":"textField",
+                      "options":{}
+                   },
+                   {
+                      "value":"",
+                      "key":"meeting_date",
+                      "label":"Meeting date",
+                      "required":true,
+                      "order":3,
+                      "controlType":"datepicker"
+                   },
+                   {
+                      "value":"",
+                      "key":"client_motivated",
+                      "label":"Client request a meeting",
+                      "required":true,
+                      "order":2,
+                      "controlType":"radio",
+                      "options":[
+                         {
+                            "key":"Yes",
+                            "value":"Yes"
+                         },
+                         {
+                            "key":"No",
+                            "value":"No"
+                         }
+                      ]
+                   },
+                   {
+                      "value":"",
+                      "key":"topic",
+                      "label":"Meeting topics",
+                      "required":true,
+                      "order":4,
+                      "controlType":"selectOne",
+                       "options":[
+                         {
+                            "key":"Daily Banking",
+                            "value":"Daily Banking"
+                         },
+                         {
+                            "key":"Lending",
+                            "value":"Lending"
+                         },
+                         {
+                            "key":"Pension",
+                            "value":"Pension"
+                         },
+                         {
+                            "key":"Cards Management",
+                            "value":"Cards Management"
+                         },
+                         {
+                            "key":"Insurance",
+                            "value":"Insurance"
+                         }
+                      ]
+                   }
+                ]
+             }
+          ]
+       },
+       {
+           "key": "2",
+          "title":"Insurance form",
+          "sections":[
+             
+          ]
+       },
+       {
+           "key": "3",
+          "title":"Lending form",
+          "sections":[
+             
+          ]
+       },
+       {
+           "key": "4",
+          "title":"Pension form",
+          "sections":[
+             
+          ]
+       },
+       {
+           "key": "5",
+          "title":"Childs savings form",
+          "sections":[
+             
+          ]
+       },
+       {
+           "key": "6",
+          "title":"Daily banking",
+          "sections":[
+             
+          ]
+       },
+       {
+           "key": "7",
+          "title":"Credit cards",
+          "sections":[
+             
+          ]
+       }
+       
+    ]
+ }

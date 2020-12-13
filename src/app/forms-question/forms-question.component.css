@@ -1,0 +1,11 @@
+.question_label {
+  font-family: "Poppins", sans-serif;
+}
+
+.errorMessage {
+  color: red;
+}
+
+::ng-deep .mat-form-field-wrapper {
+  margin-bottom: -1.25em;
+}
